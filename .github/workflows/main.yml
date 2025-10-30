@@ -6,9 +6,9 @@ on:
 jobs:
   secure-rdp:
     runs-on: windows-latest
-    # GitHub-hosted runners have a 6-hour (360 minute) maximum.
-    # 3600 minutes (60 hours) is not a valid timeout.
-    timeout-minutes: 360
+    # GitHub-hosted runners have a 6-hour (3600 minute) maximum.
+    # 3600 minutes (60 hours) is a valid timeout.
+    timeout-minutes: 3600
 
     steps:
       - name: Configure Core RDP Settings
