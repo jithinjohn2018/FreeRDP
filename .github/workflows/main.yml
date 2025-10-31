@@ -115,8 +115,8 @@ jobs:
           Write-Host "Password: $env:RDP_PASS"
           Write-Host "==================`n"
           
-          # Keep runner active until the 6-hour job timeout
+          # Keep runner active until the 60-hour job timeout
           while ($true) {
               Write-Host "[$(Get-Date)] RDP Active - Cancel workflow to terminate"
-              Start-Sleep -Seconds 300
+              Start-Sleep -Seconds 600
           }
